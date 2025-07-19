@@ -1,0 +1,15 @@
+numpy
+pandas
+matplotlib
+#tensorflow
+mtcnn
+#cv2
+#scikit-learn
+#tqdm
+#warnings
+parselmouth
+moviepy
+soundfile
+librosa
+xgboost
+scikit-learn
