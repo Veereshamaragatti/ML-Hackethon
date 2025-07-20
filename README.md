@@ -1,6 +1,21 @@
 Multimodal Sentiment Analysis in Conversational Data
 This project implements a multimodal sentiment analysis model to classify emotions in conversations using text, audio, and visual data. The system uses comprehensive feature engineering and an ensemble of XGBoost classifiers to predict sentiment from the provided conversational dataset.
 
+Key Features
+Multimodal Approach: Integrates features from three data sources for a holistic analysis:
+
+Text Analysis: Cleans text while preserving emotional markers (!, ?, ...). Extracts features like punctuation counts, word count, and speaking rate.
+
+Audio Analysis: Processes audio using librosa and parselmouth to extract pitch, energy, and voice quality metrics (e.g., HNR).
+
+Visual Analysis: Employs an MTCNN to detect faces, track facial landmarks, and analyze expressions and movements from video clips.
+
+Advanced Feature Engineering:
+
+Temporal Features: Captures conversational flow through utterance duration, speaking rate, and pauses.
+
+Speaker & Context Features: Creates speaker profiles based on sentiment patterns and tracks conversational context, such as previous speaker and sentiment.
+
 Implementation Steps
 The project pipeline is executed in the following sequence:
 
@@ -71,15 +86,13 @@ Bash
 git clone https://github.com/Veereshamaragatti/ML-Hackethon.git
 cd ML-Hackethon
 Install Dependencies:
-It is recommended to create a virtual environment first. Then, install the required packages.
+It is recommended to create a virtual environment first. Then, install the required packages. You can create a requirements.txt file with the list above and run:
 
 Bash
 
 pip install -r requirements.txt
-(You may need to create a requirements.txt file from the libraries listed above).
-
 Ensure Data is in Place:
-Make sure the Set3_Sentiment dataset (or your custom data) is placed in the correct directory structure as expected by the notebook.
+Make sure the Set3_Sentiment dataset is placed in the correct directory structure as expected by the notebook (e.g., Set3_Sentiment/train/, Set3_Sentiment/test/).
 
 Execute the Notebook:
 Open and run the ml hakethon.ipynb notebook in a Jupyter environment.
