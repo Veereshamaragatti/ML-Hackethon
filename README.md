@@ -2,6 +2,8 @@
 
 This project implements a multimodal sentiment analysis model to classify emotions in conversations using **text**, **audio**, and **visual** data. The system uses comprehensive feature engineering and an ensemble of **XGBoost** classifiers to predict sentiment from the provided conversational dataset.
 
+> 📖 **For a detailed, in-depth explanation with examples of how each component works, see [PROJECT_EXPLANATION.md](PROJECT_EXPLANATION.md)**
+
 ### Key Features
 
 * **Multimodal Approach**: Integrates features from three data sources for a holistic analysis:
